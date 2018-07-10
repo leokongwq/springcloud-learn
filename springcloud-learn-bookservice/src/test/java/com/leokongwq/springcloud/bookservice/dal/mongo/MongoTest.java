@@ -1,6 +1,5 @@
 package com.leokongwq.springcloud.bookservice.dal.mongo;
 
-import com.leokongwq.springcloud.bookservice.dal.mongo.MongoTestConfiguration;
 import com.leokongwq.springcloud.bookservice.dal.mongo.dao.UserMongoDao;
 import com.leokongwq.springcloud.bookservice.dal.mongo.domain.User;
 import com.mongodb.BasicDBObject;
@@ -17,7 +16,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Import;
-import org.springframework.data.mongodb.core.CollectionOptions;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;

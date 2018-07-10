@@ -2,6 +2,7 @@ package com.leokongwq.springcloud.booksvrclient.service;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
