@@ -7,11 +7,11 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.aop.AopAutoConfiguration;
 import org.springframework.boot.web.servlet.ServletComponentScan;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-//@EnableDiscoveryClient
-@SpringBootApplication
+@EnableDiscoveryClient
+@SpringBootApplication(exclude = {WebConfig.class, AopAutoConfiguration.class})
 @ServletComponentScan(basePackages = "com.leokongwq.springcloud.bookservice.web")
-@EnableAutoConfiguration(exclude = {WebConfig.class, AopAutoConfiguration.class})
 public class BookServiceApplication {
 
 	public static void main(String[] args) {

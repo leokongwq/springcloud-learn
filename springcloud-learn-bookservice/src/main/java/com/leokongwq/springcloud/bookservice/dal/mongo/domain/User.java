@@ -20,7 +20,6 @@ import lombok.extern.slf4j.Slf4j;
 @Document(collection = "users")
 public class User {
     @Id
-    private String _id;
     private Long id;
     private String name;
 }

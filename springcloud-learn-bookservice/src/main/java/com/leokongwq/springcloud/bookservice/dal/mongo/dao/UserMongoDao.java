@@ -15,7 +15,7 @@ import java.util.List;
  */
 public interface UserMongoDao extends MongoRepository<User, Long> {
 
-    public User findById(Long id);
+    User findById(Long id);
 
-    public List<User> findByName(String name);
+    List<User> findByName(String name);
 }
