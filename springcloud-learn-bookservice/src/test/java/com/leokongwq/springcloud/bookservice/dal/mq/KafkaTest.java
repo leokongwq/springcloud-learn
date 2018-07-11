@@ -1,7 +1,6 @@
 package com.leokongwq.springcloud.bookservice.dal.mq;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
-import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.IntegerDeserializer;
 import org.apache.kafka.common.serialization.IntegerSerializer;
@@ -40,7 +39,7 @@ public class KafkaTest {
     private static final String topic1 = "mytopic";
 
     @Test
-    public void testSendMsgSysn() throws Exception {
+    public void testSendMsgSysn() {
         KafkaTemplate<Integer, String> kafkaTemplate = createTemplate();
         for (int i = 0; i < 10; i++) {
 //            kafkaTemplate.send(topic1, "hello ===> " + i).get();
