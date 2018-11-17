@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 @Data
 public class DruidProperty {
 
-    private String dbUrl;
+    private String url;
 
     private String username;
 

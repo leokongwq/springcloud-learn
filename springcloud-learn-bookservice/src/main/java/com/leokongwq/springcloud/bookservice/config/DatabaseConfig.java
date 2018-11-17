@@ -28,7 +28,7 @@ public class DatabaseConfig {
     public DataSource dataSource() {
         DruidDataSource datasource = new DruidDataSource();
 
-        datasource.setUrl(druidProperty.getDbUrl());
+        datasource.setUrl(druidProperty.getUrl());
         datasource.setUsername(druidProperty.getUsername());
         datasource.setPassword(druidProperty.getPassword());
         datasource.setDriverClassName(druidProperty.getDriverClassName());

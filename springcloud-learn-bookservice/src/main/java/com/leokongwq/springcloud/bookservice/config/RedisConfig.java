@@ -12,5 +12,5 @@ import org.springframework.context.annotation.Import;
 @Configuration
 @Import(UranusConfigRegistrar.class)
 @EnableRedisCache
-public class WebConfig {
+public class RedisConfig {
 }

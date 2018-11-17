@@ -10,7 +10,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @EnableDiscoveryClient
 @SpringBootApplication
-@ServletComponentScan(basePackages = "com.leokongwq.springcloud.bookservice.web")
+@ServletComponentScan
 public class BookServiceApplication {
 
 	public static void main(String[] args) {
